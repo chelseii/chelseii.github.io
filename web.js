@@ -91,7 +91,7 @@ const modalImageSets = {
         "images/eyestrain/eyestrain2.png",
         "images/eyestrain/eyestrain3.png",
         "images/eyestrain/eyestrain4.png",
-        "images/eyestrain/eyestrain5.png",
+        "images/eyestrain/eyestrain5.PNG",
         "images/eyestrain/eyestrain6.png"
     ],
     modalImage2: [
@@ -132,4 +132,5 @@ function prevImage(imgId) {
         (modalCurrentIndexes[imgId] - 1 + modalImageSets[imgId].length) %
         modalImageSets[imgId].length;
     showImage(imgId);
+
 }

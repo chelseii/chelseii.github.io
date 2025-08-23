@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--Tab Header-->
+<Head>
+    <title> Chelsea's Website </title>
+    <link rel="stylesheet" href="web.css"> 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</Head>
+
+<!--------------------------------------------Features----------------------------------------------------- -->
+<Body>
+<!--Dropdown menu button -->
+    <div class="dropdown">
+        <button> <p id="dash1" ></p> <p id="dash2"></p> <p id="dash3"></p> </button>
+        <div class="content">
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="aboutLink">About</a>
+            <a href="#" id="projectsLink">Projects</a>
+            <a href="#" id="experienceLink">Experience</a>
+        </div>
+    </div>
+    
+<!--Sticky Header-->
+    <div id="StickyHeader">
+        <p id="p1">PORTFOLIO</p>
+    </div>
+
+<!--Sticky Top Contact Buttons-->
+    <div class="top-contact-container">
+        <a id="topGithub" href="https://github.com/chelseii" target="_blank" class="top-contact-button" type="button" >
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a id="topLinkedIn" href="https://www.linkedin.com/in/chelseadealmeida/" target="_blank" class="top-contact-button" type="button" >
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+    </div>
+
+<!--Left Side Dots-->
+    <div class="dot-container">
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+      </div>
+
+<!---------------------------------------------------------------Page 1---------------------------------------------------------------------- -->
+<!--Home Centre Details-->
+    <div class="intro-box-container">
+        <!--Icon Image Section-->
+        <div id="box1">
+            <img src="images/MainIcon.png" class="main-icon">
+            <img src="images/SpinningText.png" class="spinning-text">
+        </div>
+        <!--Description Section -->
+        <div id="box2" class="typewriter">
+            <br><br>
+            <h1 id="h1">Hi! I'm Chelsea de Almeida</h1>
+            <h2 id="h2">I'm a Computer Science Graduate from QUT.</h2>
+            <p id="p1">
+                I’m a former IT student with a passion for software and web development. I focus on creating functional, 
+                user-friendly solutions that combine technology and creativity.
+            </p>
+        </div>
+    </div>
+
+<!---------------------------------------------------------------Page 2---------------------------------------------------------------------- -->
+    <hr class="rounded" id="breaker1">
+    
+    <div class="aboutme-container">
+        <div class="aboutmeCard" id="card1">
+            <h1 id="h3">About Me</h1>
+        </div>
+        <div class="aboutmeCard" id="card2"> </div>
+        <div class="aboutmeCard" id="card3">
+            <img src="images/aboutmeIcon.PNG" class="aboutme-icon">
+        </div>
+        <div class="aboutmeCard" id="card4">
+            <h1 id="card-header">Education</h1>
+            <p>
+                <span class="year">✦ 2022 - 2025</span><br>
+                <span class="university">Queensland University of Technology (QUT)</span><br>
+                <span class="degree">Bachelor of Information Technology</span><br>
+                <span class="majorminor">• Major: Computer Science </span><br>
+                <span class="majorminor">• Minor: Networks and Security</span>
+            </p>
+        </div>
+        <div class="aboutmeCard" id="card5">
+            <h1 id="card-header">Languages</h1>
+            <p>
+                <img src="images/langIcons/csharpIcon.png" class="lang-icon" alt="C Sharp">
+                <img src="images/langIcons/javaIcon.png" class="lang-icon">
+                <img src="images/langIcons/pythonIcon.png" class="lang-icon">
+                <img src="images/langIcons/jsIcon.png" class="lang-icon">
+                <img src="images/langIcons/htmlIcon.png" class="lang-icon">
+                <img src="images/langIcons/cssIcon.png" class="lang-icon">
+            </p>
+        </div>
+        <div class="aboutmeCard" id="card6">
+            <p id="hello">Hello there! Welcome to my personal website ♥︎</p>
+            <p id="intro">
+                I recently graduated with a Bachelor of Information Technology in 2025. 
+                Since starting my degree in 2022, I’ve developed a passion for software development, web design, and 
+                creating practical, user-friendly solutions. My focus is on combining technical skills and creative 
+                design to solve problems and build functional, visually appealing digital experiences.
+            </p>
+            <p id="last-line"> 
+                I’m always eager to collaborate, learn, and bring ideas to life. Explore my portfolio and, feel free to reach out!
+            </p>
+        </div>
+        <div class="aboutmeCard" id="card7">
+            <h1 id="card-header">Tools</h1>
+            <p>
+                <img src="images/toolIcons/gitIcon.png" class="lang-icon">
+                <img src="images/toolIcons/githubIcon.png" class="lang-icon">
+                <img src="images/toolIcons/vscIcon.png" class="lang-icon">
+                <img src="images/toolIcons/vsIcon.png" class="lang-icon">
+                <img src="images/toolIcons/intellijIcon.png" class="lang-icon">
+                <img src="images/toolIcons/puttyIcon.png" class="lang-icon">
+                
+            </p>
+        </div>
+
+    </div>
+
+<!---------------------------------------------------------------Page 3---------------------------------------------------------------------- -->
+    <hr class="rounded" id="breaker2">
+
+    <!------------ Modal Covers------------- -->
+    <div class="projects-container">
+    <div class="header" id="MyProjectsHeader">
+        <h1 id="h1">My Projects ✦</h1>
+        <div class="project-container">
+
+        <!--Project 1-->
+        <div class="project" onclick="openModal('modal1')">
+            <div class="project-cover">
+                <div class="project-thumb-tall">
+                    <img src="images/eyestrain/eyestrain1.png" alt="EyeStrain screenshot">
+                </div>
+                <h3 class="project-title">EyeStrain</h3>
+                <p class="project-subtitle">Digital Wellbeing App</p>
+                <div class="project-tags">
+                    <span>Java</span><span>Maven</span><span>JavaFX</span>
+                </div>
+            </div>
+        </div>
+
+        <!--Project 2-->
+        <div class="project" onclick="openModal('modal2')">
+            <div class="project-cover">
+                <div class="project-thumb-wide">
+                    <img src="images/movieapp/movieapp1.png" alt="MovieApp screenshot">
+                </div>
+                <h3 class="project-title">Movie App</h3>
+                <p class="project-subtitle">Movie Search Website</p>
+                <div class="project-tags">
+                    <span>React</span><span>JavaScript</span><span>CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <!--Project 3-->
+        <div class="project" onclick="openModal('modal3')">
+            <div class="project-cover">
+                <div class="project-thumb-wide">
+                    <img src="images/geodesk/geodesk1.jpg" alt="GeoDesk screenshot">
+                </div>
+                <h3 class="project-title">GeoDesk AI</h3>
+                <p class="project-subtitle">Customisable Dashboard</p>
+                <div class="project-tags">
+                    <span>JavaScript</span><span>Django</span><span>Python</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    
+    </div>
+
+<!-----------------------Modal 1----------------------- -->
+            <div id="modal1" class="modal">
+                <div class="modal-content two-column-modal">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+
+                    <div class="modal-text">
+                    <h3>EyeStrain – Digital Wellbeing Desktop App</h3>
+                    <h4>Helping users reduce screen time, fatigue, and improve focus</h4>
+
+                    <p>
+                        EyeStrain is a desktop application designed to promote healthier screen habits 
+                        by reminding users to take regular breaks and manage screen time more effectively.
+                        Built as part of a group Agile software development unit, our focus was to develop 
+                        a lightweight tool that improves digital wellbeing and productivity.
+                    </p>
+
+                    <p><strong>Tech Stack:</strong> Java, Maven, JavaFX, Tkinter</p>
+
+                    <ul>
+                        <li>Collaborated in a team of five by planning and developing features using Agile methodology and Git.</li>
+                        <li>Translated user needs into actionable User Stories and applied Object-Oriented Principles to structure core application features.</li>
+                        <li>Designed and integrated a customizable notification system linked to a timer, enabling users to receive tailored prompts that support healthy screen habits.</li>
+                        <li>Applied UI/UX design principles to design the app’s interface, focusing on readability, user comfort, and a clean navigation flow, resulting in a more intuitive experience.</li>
+                        <li>Implemented Test-Driven Development (TDD) to ensure code reliability and maintainability, which reduced time debugging and increased the scalability for new feature releases.</li>
+                    </ul>
+
+                    <p>
+                        <a href="https://github.com/KingKong74/CAB302_Desktop-application" target="_blank">💾 GitHub Link</a>
+                        <a href="https://drive.google.com/file/d/1JAMC6ZfcOH9XZh1LSP5hZQit_pcf5f7t/view?usp=sharing" target="_blank">▶ Live Demo</a>
+                    </p>
+                    </div>
+
+                    <!-- Image Slideshow -->
+                    <div class="modal-gallery">
+                        <img id="modalImage1" src="images/eyestrain/eyestrain1.png" alt="Project Screenshot">
+                        <div class="gallery-controls">
+                            <button onclick="prevImage('modalImage1')">←</button>
+                            <button onclick="nextImage('modalImage1')">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!-----------------------Modal 2----------------------- -->           
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    
+                    <div class="modal-text">
+                    <h3>Movie Search App – Client-Side Web Application</h3>
+                    <h4>Browsing and exploring movie metadata with authentication and protected content</h4>
+
+                    <p>
+                        The Movie Search App is a React-based web application that allows users to search,
+                        filter, and browse metadata for films released between 1990 and 2023. Built as part
+                        of an individual university project, the focus was on designing a visually consistent,
+                        user-friendly interface while integrating secure access to protected API content
+                        using token-based authentication.
+                    </p>
+
+                    <p><strong>Tech Stack:</strong> JavaScript, React, Vite, Axios, React Router, CSS</p>
+
+                    <ul>
+                        <li>Designed and implemented search, pagination, and protected routes using React Router and Axios, enabling users to view movie metadata and access restricted cast details upon login.</li>
+                        <li>Built a custom, Ghibli-inspired interface using modular CSS to enhance visual consistency, accessibility, and user experience without relying on external UI libraries.</li>
+                        <li>Structured the app with reusable components, logical routing, and a clear folder hierarchy, resulting in maintainable and scalable code.</li>
+                        <li>Delivered a stable and responsive application that passed a majority of the core functional tests, providing a clean and intuitive user experience across key features.</li>
+                    </ul>
+
+                    <p><strong>Limitations:</strong> Automatic token refresh was not implemented, requiring re-login on token expiry; responsive design was partially completed; planned data visualisation features (IMDb rating trends) were excluded to prioritise core functionality. </p>
+
+
+                    <p>
+                        <a href="https://github.com/chelseii/Movie-Search-Application" target="_blank">💾 GitHub Link</a>
+                    </p>
+                    </div>
+
+                    <!-- Image Slideshow -->
+                    <div class="modal-gallery">
+                        <img id="modalImage2" src="images/movieapp/movieapp1.png" alt="Project Screenshot">
+                        <div class="gallery-controls">
+                            <button onclick="prevImage('modalImage2')">←</button>
+                            <button onclick="nextImage('modalImage2')">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-----------------------Modal 3----------------------- -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <div class="modal-text">
+                    <h3>GeoDesk Ai – Work Intergrated Learning</h3>
+                    <h4>Final Year Capstone with OreFox Ai Limited</h4>
+
+                    <p>
+                        Designed and built a responsive, widget-based, user-customizable dashboard with my team for OreFox’s
+                        GeoDesk web application, enabling miners, project managers, and analysts to visualize and manage geospatial data more effectively.
+                        The dashboard features modular widgets and a scalable architecture, allowing users to tailor their workspace to specific operational needs and real-time data insights.
+                    </p>
+
+                    <p><strong>Tech Stack:</strong> JavaScript, Django, Python, HTML, CSS</p>
+
+                    <ul>
+                        <li>Developed our UI prototypes using Figma, turning stakeholder requirements into high-fidelity mockups for implementation.</li>
+                        <li>Implemented frontend features including the Widget Library, Edit Dashboard tools, and a responsive layout using JavaScript, HTML, and CSS, which ensures cohesive styling, interactivity, and usability across devices and resolutions.</li>
+                        <li>Built backend functionality for the Disaster Location Board widget and user logout using Django, with scalable, API-ready architecture that supports seamless integration and future expansion.</li>
+                        <li>Held the role of team leader, which involved overseeing key sprints, managing planning, stakeholder communication, and team coordination, ensuring smooth collaboration and timely delivery of project milestones.</li>
+                    </ul>
+
+                    <p>
+                        <a href="https://drive.google.com/file/d/1Bn1l06Kvl_NFHQAGHKyh1CvUUeJJ4aG2/view?usp=sharing&t=47" target="_blank">▶ Live Demo</a>
+                    </p>
+                    </div>
+
+                    <!-- Image Slideshow -->
+                    <div class="modal-gallery">
+                        <p>✦ Please watch demo video for better quality ✦</p>
+                        <video id="modalVideo3" class="modal-media" autoplay loop muted playsinline>
+                            <source src="images/geodeskgif1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------------------------------------------------------------Page 4---------------------------------------------------------------------- -->
+    <hr class="rounded" id="breaker3">
+
+    <div class="experience-container">
+        <div class="header" id="MyExperienceHeader">
+            <h1 id="h1" id="">My Experience ✿️ </h1>
+
+            <div class="experience-sections">
+                <!-----------------------------OREFOX AI----------------------------- -->
+                <div class="section">
+                    <p>
+                        <span class="experience-technical">TECHNICAL</span><br>
+                        <p></p>
+                        <span class="experience-date">✦ July 2024 - June 2025</span><br>
+                        <span class="experience-title">Website Developer - Work integrated learning</span><br>
+                        <span class="experience-company">OreFox Ai Limited</span><br>
+                        <p></p>
+                        <span class="experience-description">Designed and built a responsive, widget-based, user-customizable dashboard with my team for OreFox’s GeoDesk Ai web application, for our final-year capstone.</span><br><br>
+                        
+                        <span class="experience-dotpoint">
+                        • <strong>UI/UX Design:</strong> Developed our UI prototypes using Figma, turning stakeholder requirements into high-fidelity mockups for implementation
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • <strong>Frontend Development:</strong> Implemented frontend features including the Widget Library, Edit Dashboard tools, and a responsive layout using JavaScript, HTML, and CSS, which ensures cohesive styling, interactivity, and usability across devices and resolutions.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • <strong>Backend Development:</strong> Built backend functionality for the Disaster Location Board widget and user logout using Django, with scalable, API-ready architecture that supports seamless integration and future expansion.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • <strong>Team Leadership:</strong> Held the role of team leader, which involved overseeing key sprints, project planning, stakeholder communication, and team coordination.
+                        </span>
+                    </p>
+                </div>
+                <!-----------------------------AUS ZOO----------------------------- -->
+                <div class="section">
+                    <p>
+                        <span class="experience-technical">NON-TECHNICAL</span><br>
+                        <p></p>
+                        <span class="experience-date">✿️ June 2024 - January 2025</span><br>
+                        <span class="experience-title">Holiday Casual / Car Park Attendant</span><br>
+                        <span class="experience-company">Australia Zoo Pty Ltd</span><br>
+                        <p></p>
+
+                        <span class="experience-dotpoint">
+                        • Managed traffic flow and monitored parking zones for more than two thousand guests per day during peak holiday periods, ensuring safety and smooth arrivals.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Delivered friendly, professional customer service and supported teammates to maintain efficient operations across the facility and uphold the reputation of the zoo.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Kept parking areas clean and orderly, and responded to emergencies in coordination with security staff.
+                        </span><br> 
+                        <p></p>
+
+                        <span class="experience-description">
+                        <strong> Cross department collaboration: </strong>
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Assisted koala keepers with food delivery, enclosure cleaning, and animal care tasks, ensuring the animals were well-fed, healthy, and living in safe, hygienic conditions.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Supported kitchen staff with food prep, cooking, and plating while maintaining strict hygiene standards to establish efficient service and food safety compliance.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Conducted stock counts, resolved discrepancies, and organised inventory across multiple departments, improving inventory accuracy and reducing supply shortages.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Aid cleaning staff in sanitizing restrooms and common areas, ensuring waste was disposed of properly, providing a safe and welcoming environment.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Managed crowd flow at the Crocoseum, guiding guests to appropriate seating, including accessible options, and ensuring a smooth entry experience.
+                        </span><br>
+                    </p>
+                </div>
+                <!-----------------------------MALENY GARDENS----------------------------- -->
+                <div class="section">
+                    <p>
+                        <span class="experience-technical">NON-TECHNICAL</span><br>
+                        <p></p>
+                        <span class="experience-date">❤︎ January 2021 - September 2021</span><br>
+                        <span class="experience-title">Front of House & Guest Services Assistant</span><br>
+                        <span class="experience-company">Maleny Botanic Gardens & Bird World</span><br>
+                        <p></p>
+
+                        <span class="experience-dotpoint">
+                        • Provided excellent customer service by warmly greeting patrons and efficiently managing POS transactions for tickets, merchandise, buggy rentals, and food and beverages, ensuring smooth transactions and a positive guest experience. 
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Delivered orders to gazebos with meticulous care and conducted demonstrations on safe buggy operation.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Maintained high cleanliness standards by regularly sweeping, mopping, and disposing of waste, upkeeping a hygienic and welcoming environment. 
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        •  Coordinated with the team during high-volume rushes to ensure smooth and high-standard operations.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Professionally addressed customer complaints and escalations, involving management when necessary.                       
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Managed inventory by replenishing merchandise, cold drinks, and ice creams to maintain stock levels and reduce service delays.
+                        </span><br>
+
+                        <span class="experience-dotpoint">
+                        • Assisted in preparing café food and beverages, contributing to timely and high-quality service delivery.
+                        </span><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <p>© 2025 v1.0 - Made by Chelsea de Almeida </p>
+        <p>Built with HTML · CSS · JS | Thanks for stopping by ❤︎ </p>
+        <div class="footer-socials">
+        <a href="https://github.com/chelseii" target="_blank">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/chelseadealmeida/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+    </footer>
+
+<!-----------other------------ -->
+    <script src="web.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html>
